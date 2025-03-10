@@ -1,23 +1,255 @@
-
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/* General body styling */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #3498db !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db;
+}
+
+/* Profile header styling */
+.profile-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Carousel styling */
+.carousel-section {
+    margin: 20px 0;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Profile info section */
+.profile-info-section {
+    padding: 40px 0;
+}
+
+.profile-info-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-info-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer styling */
+.footer {
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 29%;
+    margin-right: 29%;
+}
+
+.header h2 {
+    color: #6aa84f;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.logout-button {
+    background-color: #e040fb;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.logout-button:hover {
+    opacity: 0.8;
+}
+
+/* Main content styling */
+.content {
+    background: url(image.png);
+    background-size:cover;
+    min-height: 100vh;
+    padding: 40px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
-    height: 100vh;
+}
+
+.container{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 44%;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.profile-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 44%;
+    margin-bottom: 40px;
+    align-items: center;
+    
+}
+
+.image-container {
+    width: 300px;
+    height: 400px;
+    background-color: #b7dab2;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    padding: 20px;
+    width: calc(100% - 300px);
+}
+
+.info-container h3 {
+    color: #6aa84f;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.info-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.info-container li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Profile Information Section */
+.profile-info-section {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-info-section h2 {
+    color: #6aa84f;
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.profile-info{
+    margin-top: 20px;
+}
+
+.profile-info p {
+        margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.profile-info strong {
+    font-weight: 600;
 }
 
 
+
+
+.bungkus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height:100vh;
+}
+
 .container {
+    
     display: grid;
     grid-template-rows: auto auto auto;
     gap: 20px;
@@ -223,3 +455,4 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #27ae60;
 }
+

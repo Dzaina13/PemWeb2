@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil</title>
+    <title>Profile Page</title>
     <!-- Menggunakan Google Fonts untuk Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Menyertakan file CSS eksternal -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Profil Saya</h2>
-        <div class="profile-info">
-            <p><strong>Nama:</strong> <span id="username"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Alamat:</strong> <span id="address"></span></p>
-            <p><strong>Tanggal Lahir:</strong> <span id="birthdate"></span></p>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h2>Halo, User</h2>
+            <button onclick="window.location.href='index.html'" class="logout-button">Log Out</button>
         </div>
-        <button onclick="window.location.href='index.html'" class="logout-button">Log Out</button>
-    </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main class="content">
+        <div class="profile-card">
+            <div class="image-container">
+                <img src="Profil.png" alt="Profile Image">
+            </div>
+            <div class="info-container">
+                <h3>Profil Saya</h2>
+            <div class="profile-info">
+                <p><strong>Nama:</strong> <span id="username"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Alamat:</strong> <span id="address"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="birthdate"></span></p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Profile Information Section -->
+        <div class="profile-info-section">
+            
+        </div>
+    </main>
 
     <script>
         // Ambil data dari localStorage dan tampilkan di halaman profil
